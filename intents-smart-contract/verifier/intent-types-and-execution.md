@@ -95,7 +95,7 @@ Example of an intent to add a public key:
 ]
 ```
 
-* [remove\_public\_key](https://near.github.io/intents/defuse/accounts/trait.AccountManager.html#tymethod.remove_public_key): Removes a public key associated with a given account.&#x20;
+* [remove\_public\_key](https://near.github.io/intents/defuse/accounts/trait.AccountManager.html#tymethod.remove_public_key): Removes a public key associated with a given account.
 
 Note that public keys can be removed through transactions too. See [this section](account-abstraction.md) for more information.
 
@@ -179,7 +179,7 @@ Example of an intent to withdraw from Alice's account to Bob's account. Notice t
 ]
 ```
 
-* [StorageDeposit](https://near.github.io/intents/defuse_core/intents/tokens/struct.StorageDeposit.html): Make an [NEP-145](https://nomicon.io/Standards/StorageManagement#nep-145) `storage_deposit` call for an `account_id` on `contract_id`. The `amount` will be subtracted from user’s NEP-141 `wNEAR` balance. The `wNEAR` will not be refunded in any case.&#x20;
+* [StorageDeposit](https://near.github.io/intents/defuse_core/intents/tokens/struct.StorageDeposit.html): Make an [NEP-145](https://nomicon.io/Standards/StorageManagement#nep-145) `storage_deposit` call for an `account_id` on `contract_id`. The `amount` will be subtracted from user’s NEP-141 `wNEAR` balance. The `wNEAR` will not be refunded in any case.
 
 Example of an intent to perform storage deposit that will pay for storage deposit in the usdc.near smart contract. The Near token required (and specified) will be taken from `alice.near` account, and paid to `bob.near` in the `usdc.near` contract:
 
@@ -200,7 +200,7 @@ Example of an intent to perform storage deposit that will pay for storage deposi
 
 [TokenDiff](https://near.github.io/intents/defuse_core/intents/token_diff/struct.TokenDiff.html): The user declares the will to have a set of changes done to set of tokens. For example, a simple trade of 100 of token A for 200 of token B, can be represented by `TokenDiff` of {“A”: -100, “B”: 200} (this format is just for demonstration purposes). In general, the user can submit multiple changes with many tokens, not just token A for token B.
 
-Example of two intents submitted from two users to be used with the `Verifier's` smart contract's `execute_intents` function. In the first intent, Alice declares that she is willing to lose 10 `USDC` to get 10 `USDT` in return. In the second intent, Bob declares their will to lose 10 `USDT` and get 10 `USDC` in return. As mentioned in the [introduction](introduction.md), there are many different ways to put these intents together for submission to the blockchain, such as in the [Message Bus](../bus/) or with third parties or any off-chain communication channel. Once a transaction is submitted calling the function `execute_intents` in the `Verifier's` smart contract, the `Verifier` solves the `TokenDiff` orders and converts them into transfers from Alice to Bob and Bob to Alice.
+Example of two intents submitted from two users to be used with the `Verifier's` smart contract's `execute_intents` function. In the first intent, Alice declares that she is willing to lose 10 `USDC` to get 10 `USDT` in return. In the second intent, Bob declares their will to lose 10 `USDT` and get 10 `USDC` in return. As mentioned in the [introduction](introduction.md), there are many different ways to put these intents together for submission to the blockchain, such as in the [Message Bus](../../market-makers/bus/) or with third parties or any off-chain communication channel. Once a transaction is submitted calling the function `execute_intents` in the `Verifier's` smart contract, the `Verifier` solves the `TokenDiff` orders and converts them into transfers from Alice to Bob and Bob to Alice.
 
 ```json
 [
@@ -227,13 +227,9 @@ Example of two intents submitted from two users to be used with the `Verifier's`
 ]
 ```
 
-\
-
-
-\
-\
-
+\\
 
 \
+\\
 
-
+\\

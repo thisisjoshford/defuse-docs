@@ -10,7 +10,7 @@ description: >-
 {% hint style="info" %}
 The NEAR intents protocol and the documentation are under active development.
 
-The protocol has been renamed from Defuse to "NEAR Intents".&#x20;
+The protocol has been renamed from Defuse to "NEAR Intents".
 {% endhint %}
 
 ```mermaid
@@ -40,6 +40,5 @@ sequenceDiagram
    2. Market Makers. Active market participants that deposit liquidity in order to fill quotes issued by users
 2. Intent Settlement:
    1. [Message Bus.](market-makers/bus/) an off chain message bus used for sending quotes and signed intents (commitments) between market makers and users. Each distribution channel can run their own Message Bus with their own set of market makers.
-   2. [Verifier](market-makers/verifier/). Smart contract that verifies intents expressed as state changes (“diffs”) signed by corresponding owners. The combination of state changes is committed as long as the invariant (total delta is zero) was kept for each token after these changes were applied. Deployed on NEAR mainnet.
+   2. [Verifier](intents-smart-contract/verifier/). Smart contract that verifies intents expressed as state changes (“diffs”) signed by corresponding owners. The combination of state changes is committed as long as the invariant (total delta is zero) was kept for each token after these changes were applied. Deployed on NEAR mainnet.
    3. [1 Click](integration/distribution-channels/1click-api.md). Swapping agent that makes it easy for distribution channels to use NEAR intents.
-
