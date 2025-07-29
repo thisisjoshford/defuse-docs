@@ -10,7 +10,7 @@ In the NEAR blockchain, events, based on [NEP-171](https://docs.near.org/tutoria
 
 #### Intents events
 
-Below is a [list of the available events](https://near.github.io/intents/defuse_core/events/enum.DefuseEvent.html) and their explanation. These events are directly related to the [intent submitted](intent-types-and-execution.md):
+Below is a [list of the available events](https://near.github.io/intents/defuse_core/events/enum.DefuseEvent.html) and their explanation. These events are directly related to the [intent submitted](broken-reference):
 
 * **PublicKeyAdded**: Emitted when a public key is added to an account with an intent
 * **PublicKeyRemoved**: Emitted when a public key was removed from an account with an intent
@@ -31,6 +31,3 @@ Multi Token events are emitted to indicate a change in the internal balances of 
 To understand the reasoning behind the naming, one can imagine the `Verifier` as a set of isolated balances that can either increase, decrease or move between accounts. Although balances are conserved and simply moved between accounts, from the Verifier contract’s perspective, increasing token amounts is equivalent to minting, and decreasing them is akin to burning.
 
 This picture stems primarily from a discussion in [this section](deposits-and-withdrawals/balances-and-identifying-your-token.md), where all tokens use the Multi Token standard for storage inside the `Verifier` smart contract.
-
-
-

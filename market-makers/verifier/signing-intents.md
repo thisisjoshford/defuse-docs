@@ -4,7 +4,7 @@ After creating intents, they must be signed before submission to the `Verifier` 
 
 ### Account abstraction
 
-As discussed in the [account abstraction section](account-abstraction.md), accounts in the `Verifier` contract are identified by their NEAR account (whether implicit, being derived from a public key, or named, like `alice.near`). Every account can add an arbitrary number of public keys. Every public key in a user's account can be used to produce signatures that authorize intents for that user. Proper key management is essential.
+As discussed in the [account abstraction section](broken-reference), accounts in the `Verifier` contract are identified by their NEAR account (whether implicit, being derived from a public key, or named, like `alice.near`). Every account can add an arbitrary number of public keys. Every public key in a user's account can be used to produce signatures that authorize intents for that user. Proper key management is essential.
 
 ### Signing philosophy and where our choice of algorithms come from
 
@@ -37,7 +37,7 @@ A signed [Transfer](https://near.github.io/intents/defuse_core/intents/tokens/st
 }
 ```
 
-This object conforms to the [MultiPayload](https://near.github.io/intents/defuse_core/payload/multi/enum.MultiPayload.html) enum. A signed intent can be one of the possibilities provided by this enum.&#x20;
+This object conforms to the [MultiPayload](https://near.github.io/intents/defuse_core/payload/multi/enum.MultiPayload.html) enum. A signed intent can be one of the possibilities provided by this enum.
 
 ### NEP-413
 
@@ -69,7 +69,7 @@ Note that there is no public key, as the public key can be recovered from the si
 
 ### Raw Ed25519
 
-This is a standard used by [Phantom wallet for Solana off-chain message signing](https://docs.phantom.com/solana/signing-a-message).&#x20;
+This is a standard used by [Phantom wallet for Solana off-chain message signing](https://docs.phantom.com/solana/signing-a-message).
 
 ```
 {

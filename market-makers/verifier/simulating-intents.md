@@ -2,7 +2,7 @@
 
 In this chapter we have discussed several methods to execute intents in the `Verifier` smart contract. The `execute_intents` function calls a mutable and modifies the `Verifier` contract’s state.
 
-However, the `Verifier` smart contract offers the possibility to simulate intents using [the function](https://near.github.io/intents/defuse/intents/trait.Intents.html#tymethod.simulate_intents) `simulate_intents`. Simulation of intents is the process of running the code of the intents provided, without modifying the state of the `Verifier` smart contract.&#x20;
+However, the `Verifier` smart contract offers the possibility to simulate intents using [the function](https://near.github.io/intents/defuse/intents/trait.Intents.html#tymethod.simulate_intents) `simulate_intents`. Simulation of intents is the process of running the code of the intents provided, without modifying the state of the `Verifier` smart contract.
 
 ### Examples where simulations can be useful
 
@@ -12,7 +12,7 @@ However, the `Verifier` smart contract offers the possibility to simulate intent
 
 ### Example outputs for simulating intents
 
-The following is a valid, signed intents to trade 100 `USDC` for 100 `USDT`. It has two intents, one from Charlie, expressing his intent to lose 100 `USDC` to get 100 `USDT` in return, while drake expressing the opposite. For more information about this structure, see [this section](intent-types-and-execution.md).
+The following is a valid, signed intents to trade 100 `USDC` for 100 `USDT`. It has two intents, one from Charlie, expressing his intent to lose 100 `USDC` to get 100 `USDT` in return, while drake expressing the opposite. For more information about this structure, see [this section](broken-reference).
 
 ```
 {
@@ -68,7 +68,7 @@ Simulation outputs may include additional data in future updates. This is a basi
 
 ### Accuracy of simulations
 
-Simulated results are designed to closely match actual execution outcomes. This is the intended outcome from the programming and heavy testing done for simulated intents. However, due to the asynchronous nature of the NEAR blockchain, ultimate code abstraction to simulate the intents exactly like they would be in real execution is not possible.&#x20;
+Simulated results are designed to closely match actual execution outcomes. This is the intended outcome from the programming and heavy testing done for simulated intents. However, due to the asynchronous nature of the NEAR blockchain, ultimate code abstraction to simulate the intents exactly like they would be in real execution is not possible.
 
 To date, simulation and execution results have always matched. If you ever discover such a case, please contact the NEAR Intents team and report it as a bug.
 
